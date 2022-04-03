@@ -15,7 +15,7 @@ function App() {
       word: word,
     };
     axios
-      .post("https://my-hack-demo-node.herokuapp.com/getwords/addword", data)
+      .post("https://my-hack-demo-node.herokuapp.com/addword", data)
       .then((res) => {
         console.log(res);
       })
