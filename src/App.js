@@ -18,11 +18,11 @@ function App() {
       .post("https://my-hack-demo-node.herokuapp.com/addword", data)
       .then((res) => {
         console.log(res);
+        fetchData();
       })
       .catch((err) => {
         console.log(err);
       });
-    fetchData();
   };
 
   const onDelete = (word) => {
